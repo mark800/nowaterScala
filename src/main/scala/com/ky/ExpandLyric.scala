@@ -2,7 +2,7 @@ package com.ky
 
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
-
+//所有的return 可以完全省略掉
 object ExpandLyric {
 
   def main(args: Array[String]) = {
@@ -15,7 +15,8 @@ object ExpandLyric {
   def getLrcAsSeq(): Seq[String] = {
     val source = Source.fromURL(getClass.getResource("/two_tigers.txt"), "utf-8")
     //val res: Array[String] = sampleInput.split("\n")
-    val lines = try source.getLines mkString "\n" finally source.close()
+    val lines = try source.getLines mkString "\n" finally source.close()//这个地方为什么 mkString, 下面又split了？ 直接 source.getLines？
+    //如果用try finally 的话 考虑下Try
     return lines.split("\n")
   }
 
@@ -32,7 +33,7 @@ object ExpandLyric {
     return all map (_ + lyric)
   }
 
-  def expand(input: Seq[String]): Seq[String] = {
+  def expand(input: Seq[String]): Seq[String] = {//可用 fold/reduce  + Tuple2 来实现
     val all = new ListBuffer[String]
     val lyrics = new ListBuffer[String]
 
