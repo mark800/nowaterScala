@@ -1,8 +1,0 @@
-target
-*.class
-build
-.classpath
-.project
-.settings
-bin
-.cache*
