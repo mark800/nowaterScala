@@ -1,9 +1,0 @@
-[0m[[0minfo[0m] [0m[32mTestExpandLyric:[0m[0m
-[0m[[0minfo[0m] [0m[32m第一个时间标志之前的内容[0m[0m
-[0m[[0minfo[0m] [0m[32m- should 和输入的内容完全相同[0m[0m
-[0m[[0minfo[0m] [0m[32m结果的每一行[0m[0m
-[0m[[0minfo[0m] [0m[32m- should 最多含有一个时间标志[0m[0m
-[0m[[0minfo[0m] [0m[32m结果的时间标志总数[0m[0m
-[0m[[0minfo[0m] [0m[32m- should 和输入的时间标志总数相同[0m[0m
-[0m[[0minfo[0m] [0m[32m所有行的时间标志[0m[0m
-[0m[[0minfo[0m] [0m[32m- should 严格按照时间升序排列[0m[0m
